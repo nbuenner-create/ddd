@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trainingsplan – Professionelle Edition</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Startbereich -->
+    <div id="start-screen" class="start-screen">
+      <h1 class="title">Willkommen zum Trainingsplan</h1>
+      <p>Wähle einen Tag aus, um dein Training zu sehen</p>
+      <select id="daySelector">
+        <option value="">— Tag auswählen —</option>
+        <option value="montag">Montag – Push</option>
+        <option value="dienstag">Dienstag – Pull</option>
+        <option value="mittwoch">Mittwoch – Beine</option>
+        <option value="donnerstag">Donnerstag – Rest Day</option>
+        <option value="freitag">Freitag – Brust/Bizeps</option>
+        <option value="samstag">Samstag – Rest Day</option>
+        <option value="sonntag">Sonntag – Rücken/Schultern</option>
+        <option value="health">Health Training</option>
+      </select>
+    </div>
+
+    <!-- Trainingsliste -->
+    <div id="trainingOutput" class="output hidden"></div>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="modal-close" class="close">&times;</span>
+      <h2 id="modal-title"></h2>
+      <img id="modal-img" src="" alt="Übung">
+      <p id="modal-text"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
